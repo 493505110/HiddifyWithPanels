@@ -60,7 +60,7 @@ class HttpService {
           .post(
             url,
             headers: requiresHeaders
-                ? (headers ?? {'Content-Type': 'application/json; charset=utf-8'})
+                ? (headers ?? {'Content-Type': 'application/json'})
                 : null,
             body: json.encode(body),
           )
